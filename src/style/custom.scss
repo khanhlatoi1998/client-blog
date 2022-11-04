@@ -1,0 +1,67 @@
+$color-01: #ffbf35;
+
+
+.popup-overlay {
+	background: #000000b8;
+}
+
+.swiper-button-prev, .swiper-button-next {
+	display: none !important;
+}
+
+.swiper {
+	&:hover {
+		.swiper-button-prev, .swiper-button-next {
+			display: flex !important;
+		}
+	}
+}
+
+.swiper-pagination {
+	position: static !important;
+	margin-top: 20px;
+	span {
+		width: 40px;
+		height: 7px;
+		border-radius: 0;
+		background-color: #000;
+	}
+}
+
+// animation show popup
+@keyframes anvil {
+	0% {
+	  transform: scale(1) translateY(0px);
+	  opacity: 0;
+	  box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+	}
+	1% {
+	  transform: scale(0.96) translateY(10px);
+	  opacity: 0;
+	  box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+	}
+	100% {
+	  transform: scale(1) translateY(0px);
+	  opacity: 1;
+	  box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+	}
+  }
+  .popup-content {
+	-webkit-animation: anvil 0.6s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+  }
+
+
+.ql-toolbar {
+	background-color: white;
+}
+ 
+.ql-editor {
+	background-color: transparent;
+	min-height: 400px;
+	padding-bottom: 50px !important;
+
+	p > img {
+		max-width: 75% !important;
+		margin: 10px auto 10px auto !important;
+	}
+}
