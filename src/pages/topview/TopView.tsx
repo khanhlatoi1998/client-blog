@@ -41,8 +41,8 @@ const TopView: React.FC<Props> = (props) => {
                                 return (
                                     <NavLink to={`/detail/${item.id}`} key={item.id} className="relative pt-[40%]">
                                         <div className="absolute top-0 left-0 w-full h-full cursor-pointer">
-                                            <div className="bg-color_08 absolute left-0 top-0 right-0 bottom-0 flex flex-column items-center justify-center">
-                                                <p className="text-color_01 text-2xl font-bold">{item.title}</p>
+                                            <div className="bg-color_08 absolute left-0 top-0 right-0 bottom-0 flex flex-column items-end justify-center">
+                                                <p className="text-color_01 lg:text-xl font-bold p-4 lg:pb-6">{item.title}</p>
                                             </div>
                                             <picture>
                                                 <img className="h-full w-full object-cover" src={item.banner} alt="" />

@@ -26,7 +26,11 @@ const HandBook: React.FC<Props> = (props) => {
             </NavLink>
             <div className="flex-1 flex flex-col justify-center">
                 <div className="pl-4">
-                    <h3 className="content__ellipsis--title font-medium sm:text-xl text-md pb-1 relative before:absolute before:content-[''] before:w-[40px] before:h-[2px] before:bg-color_05_border before:bottom-0 before:left-0">{title}</h3>
+                    <h3 className="content__ellipsis--title font-medium sm:text-xl text-md pb-1 relative before:absolute before:content-[''] before:w-[40px] before:h-[2px] before:bg-color_05_border before:bottom-0 before:left-0">
+                        <NavLink to={`/detail/${id}`}>
+                            {title}
+                        </NavLink>
+                    </h3>
                     <p className="mt-2 content__ellipsis">{contenIntro}</p>
                     <p className="mt-2 text-xs text-color_02 opacity-70">{nickname} - {createDate}</p>
                 </div>

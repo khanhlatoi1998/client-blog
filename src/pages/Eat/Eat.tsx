@@ -26,7 +26,9 @@ const Eat: React.FC<Props> = (props) => {
                 <div className="">
                     <div className="">
                         <h3 className="content__ellipsis--title lg:min-h-[63px] mt-2 font-medium sm:text-xl text-md pb-1 relative before:absolute before:content-[''] before:w-[40px] before:h-[2px] before:bg-color_05_border before:bottom-0 before:left-0">
-                            {title}
+                            <NavLink to={`/detail/${id}`}>
+                                {title}
+                            </NavLink>
                         </h3>
                         <p className="mt-2 content__ellipsis--3 sm:text-lg text-md">{contenIntro}</p>
                         <p className="mt-2 text-xs text-color_02 opacity-70">{nickname} - {createDate}</p>
