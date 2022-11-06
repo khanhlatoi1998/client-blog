@@ -226,34 +226,34 @@ const Sidebar: React.FC<Props> = (props) => {
                     <div className="pt-4 flex flex-col">
                         <ul>
                             <li className="py-2  items-category">
-                                <a href="" className="flex justify-between">
+                                <NavLink to={`/category?c=dia-diem&p=all`} className="flex justify-between">
                                     <span>Địa Điểm Vui Chơi</span>
                                     <span>{stateListEntertainment.length}</span>
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="py-2  items-category">
-                                <a href="" className="flex justify-between">
+                                <NavLink to={`/category?c=am-thuc&p=all`} className="flex justify-between">
                                     <span>Ăn Uống</span>
                                     <span>{stateListEat.length}</span>
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="py-2  items-category">
-                                <a href="" className="flex justify-between">
+                                <NavLink to={`/category?c=homestay&p=all`} className="flex justify-between">
                                     <span>Homestay</span>
                                     <span>{stateListHomestay.length}</span>
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="py-2  items-category">
-                                <a href="" className="flex justify-between">
+                                <NavLink to={`/category?c=cam-nang&p=all`} className="flex justify-between">
                                     <span>Cẩm Nang</span>
                                     <span>{stateListHandBook.length}</span>
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="py-2  items-category">
-                                <a href="" className="flex justify-between">
+                                <NavLink to={`/category?p=all&c=all`} className="flex justify-between">
                                     <span>Trải Nghiệm</span>
                                     <span>{stateListBlogShare.length}</span>
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>
