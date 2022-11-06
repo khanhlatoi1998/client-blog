@@ -173,6 +173,10 @@ table {
 			display: none;
 		}
 	}
+	.content__ellipsis--1__block {
+		-webkit-line-clamp: 1;
+		@extend %ellipsis;
+	}
 	.content__ellipsis--3 {
 		-webkit-line-clamp: 3;
 		@extend %ellipsis;

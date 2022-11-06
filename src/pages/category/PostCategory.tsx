@@ -18,7 +18,7 @@ const PostCategory: React.FC<Props> = (props) => {
     let contentIntro = htmlSections.querySelectorAll('p:not(p > img)')[0].textContent;
 
     let trimmedString = contentIntro.substr(0, maxLength);
-    trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" "))) + '...';
+    trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" "))) + (contentIntro.length > maxLength ? '...' : '');
 
     for (let i of CATEGORY_OPTION) {
         if (i.value === category) {

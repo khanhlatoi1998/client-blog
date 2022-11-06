@@ -190,7 +190,7 @@ const Sidebar: React.FC<Props> = (props) => {
                                 }
                                 return (
                                     <div key={post.id} className="pt-4 pb-6 items-post border-dotted">
-                                        <NavLink to={`/detail/${post.id}`} className="content__ellipsis--1 text-md font-medium">{post.title}</NavLink>
+                                        <NavLink to={`/detail/${post.id}`} className="content__ellipsis--1__block text-md font-medium">{post.title}</NavLink>
                                         <div className="mt-2 text-xs text-color_11">
                                             <span className="px-2 bg-color_13 text-color_01 mr-2">{newCategory}</span>
                                             <span>{post.nickname}</span>
