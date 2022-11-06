@@ -39,7 +39,7 @@ const TopView: React.FC<Props> = (props) => {
                         {
                             stateListTopView.slice(3, 5).map(item => {
                                 return (
-                                    <NavLink to={`/detail/${item.id}`} key={item.id} className="relative pt-[40%]">
+                                    <NavLink to={`/detail/${item.id}`} key={item.id} className="relative lg:pt-[40%] pt-[35%]">
                                         <div className="absolute top-0 left-0 w-full h-full cursor-pointer">
                                             <div className="bg-color_08 absolute left-0 top-0 right-0 bottom-0 flex flex-column items-end justify-center">
                                                 <p className="text-color_01 lg:text-xl font-bold p-4 lg:pb-6">{item.title}</p>
