@@ -16,17 +16,15 @@ const GetPost = () => {
     const navigate = useNavigate();
     const [loading, setLoading] = useState<boolean>(true);
     const auth = useSelector((state: any) => state.auth);
-    console.log(auth);
     const [searchParams] = useSearchParams();
     const [post, setPost] = useState<any>({});
     const { id } = useParams();
 
     const deletePost = () => {
-        console.log(id);
-        postApi.deletePost({username: auth.username, id: id}).then((data) => {
-            console.log(data);
-        });
-        // navigate('/');
+        postApi.deletePost({ username: auth.username, id: id }).then((data) => {
+        }).then((data) => {
+            navigate('/');
+        }).catch((err) => { })
     };
 
     useEffect(() => {

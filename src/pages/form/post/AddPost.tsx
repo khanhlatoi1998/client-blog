@@ -37,14 +37,16 @@ const AddPost = () => {
         if (checkLogin.auth === true) {
             postApi.createPost({
                 ...auth,
-                post: { 
-                    ...values, 
+                post: {
+                    ...values,
                     id: id,
-                    createDate: createDate, 
-                    updateDate: updateDate 
+                    createDate: createDate,
+                    updateDate: updateDate
                 }
-            });
-            navigate(`/w/get/${id}`);
+            }).then((data) => {
+                console.log('success')
+                navigate(`/w/get/${id}`);
+            }).catch((err) => { })
         } else {
             dispatch(showModal('showLogin'));
         }
@@ -62,7 +64,7 @@ const AddPost = () => {
     });
 
     useEffect(() => {
-        scrollToHere.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        scrollToHere.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     }, []);
 
     return (

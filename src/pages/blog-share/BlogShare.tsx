@@ -21,7 +21,7 @@ const BlogShare: React.FC<Props> = (props) => {
                     <p className="text-color_01 text-2xl font-bold"></p>
                 </div>
                 <picture>
-                    <img className="h-full w-full object-cover" src={banner} alt="" />
+                    <img className="h-full w-full object-cover rounded" src={banner} alt="" />
                 </picture>
             </NavLink>
             <div className="flex-1 flex flex-col justify-center">

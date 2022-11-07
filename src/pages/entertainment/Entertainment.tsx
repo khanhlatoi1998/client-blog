@@ -20,7 +20,7 @@ const Entertainment: React.FC<Props> = (props) => {
             <div className="cursor-pointer">
                 <NavLink to={`/detail/${id}`} className="block relative pt-[56%]">
                     <picture className="absolute top-0 left-0 w-full h-full">
-                        <img className="h-full w-full object-cover" src={banner} alt="" />
+                        <img className="h-full w-full object-cover rounded" src={banner} alt="" />
                     </picture>
                 </NavLink>
                 <div className="">

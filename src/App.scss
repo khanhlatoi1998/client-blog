@@ -198,4 +198,10 @@ table {
 		@apply 	border-t border-gray-300;
 		@apply border-dotted;
 	}
+
+	.post__description {
+		p > img {
+			margin: 0 auto;
+		}
+	}
 } 
